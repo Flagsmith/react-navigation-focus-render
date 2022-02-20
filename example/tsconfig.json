@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": true,
+    "jsx": "react-native",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": false,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "styles/*": [
+        "./app/styles/*"
+      ],
+      "common/*": [
+        "./common/*"
+      ],
+      "screens/*": [
+        "./app/components/screens/*"
+      ],
+      "navigators/*": [
+        "./app/components/navigators/*"
+      ],
+      "components/*": [
+        "./app/components/*"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules",
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

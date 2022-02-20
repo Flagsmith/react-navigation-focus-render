@@ -1,0 +1,36 @@
+{
+  "name": "react-navigation-focus-render",
+  "version": "0.0.1",
+  "description": "Prevents re-renders of components that aren't on the focused screen",
+  "types": "./index.d.ts",
+  "main": "./lib/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flagsmith/react-navigation-focus-render.git"
+  },
+  "keywords": [
+    "react-native",
+    "performance",
+    "react-navigation"
+  ],
+  "devDependencies": {
+    "@types/react": "^17.0.39"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@react-navigation/native": "*"
+  },
+  "author": "kyle-ssg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flagsmith/react-navigation-focus-render/issues"
+  },
+  "homepage": "https://github.com/Flagsmith/react-navigation-focus-render#readme"
+}
