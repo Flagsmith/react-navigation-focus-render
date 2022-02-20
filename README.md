@@ -2,7 +2,11 @@
 
 # react-navigation-focus-render
 
-Screens within a stack or in tabs will still render when any global state(Redux/Context etc) is updated. This component lets you avoid these renders when the screens are inactive.
+Screens within a stack or in tabs will still render when any global state(Redux/Context etc) is updated. This component lets you avoid these renders when the screens are inactive. 
+
+
+Read a more in depth article about this [here](https://dev.to/kylessg/improving-your-react-native-application-performance-with-react-navigation-focus-render-2hih)
+
 
 
 # Installation
@@ -71,6 +75,3 @@ Given this simple example, the difference in performance when updating state can
 ![img.png](img.png)
 
 Of course, this is quite an extreme example but given an active stack of many tabs / screens this could easily add up if you have complex components.
-
-
-Read more about this [here](https://dev.to/kylessg/improving-your-react-native-application-performance-with-react-navigation-focus-render-2hih)
