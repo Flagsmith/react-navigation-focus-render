@@ -1,4 +1,4 @@
-[![Feature Flag, Remote Config and A/B Testing platform, Flagsmith](static-files/hero.png)](https://www.flagsmith.com/)
+[![Feature Flag, Remote Config and A/B Testing platform, Flagsmith](https://github.com/Flagsmith/flagsmith/raw/main/static-files/hero.png)](https://www.flagsmith.com/)
 
 # react-navigation-focus-render
 
@@ -53,14 +53,14 @@ const ExpensiveComponent = () => {
 
 # Example
 
-You can see the [example project](/example) to see this working.
+This repository includes an [example project](/example) that demonstrates this working in a simple way.
 
-HomeScreen: 
+[HomeScreen](./example/app/components/screens/HomeScreen.tsx): 
 
 - Contains an expensive component that renders 5000 text elements and is connected to redux state "count"
 - You can toggle between rendering the component via FocusRender or just by itself
 
-TabScreen
+[TabScreen](./example/app/components/screens/Tab1Screen.tsx):
 
 - Contains a screen with a button that updates state "count"
 
