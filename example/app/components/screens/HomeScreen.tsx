@@ -3,7 +3,8 @@ import {View, Button} from 'react-native';
 import {useState} from 'react';
 import {ScreenStyles} from 'styles/ScreenStyles';
 import ExpensiveComponent from '../ExpensiveComponent';
-import {useNavigation} from '@react-navigation/core'; // we need this to make JSX compile
+import {useNavigation} from '@react-navigation/core';
+import CustomNavbar from 'components/CustomNavbar'; // we need this to make JSX compile
 type ComponentType = {};
 
 const HomeScreen: React.FC<ComponentType> = ({}) => {
@@ -11,6 +12,7 @@ const HomeScreen: React.FC<ComponentType> = ({}) => {
   const navigation = useNavigation();
   return (
     <View style={ScreenStyles.screen}>
+      <CustomNavbar title={'HomeScreen'} />
       <Button
         title={`Turn FocusRender ${isActive ? 'Off' : 'On'}`}
         onPress={() => setIsActive(!isActive)}
@@ -18,8 +20,8 @@ const HomeScreen: React.FC<ComponentType> = ({}) => {
       <Button
         title={'Go to new Screen'}
         onPress={() => {
-            // @ts-ignore
-            navigation.navigate('Tabs')
+          // @ts-ignore
+          navigation.navigate('Screen2');
         }}
       />
       <ExpensiveComponent useFocusRender={isActive} />

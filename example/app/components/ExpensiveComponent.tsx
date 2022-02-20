@@ -7,6 +7,7 @@ type ComponentType = {
   useFocusRender: boolean;
 };
 
+
 const Wrapper = ({isFocused, children}) => (
   <View style={{opacity: isFocused ? 1 : 0.5}}>{children}</View>
 );
@@ -16,14 +17,14 @@ const ExpensiveComponent: React.FC<ComponentType> = ({useFocusRender}) => {
   return useFocusRender ? (
     <FocusRender Wrapper={Wrapper}>
       {!!count && <Text>Count is {count}</Text>}
-      {new Array(5000).fill(0).map((v, k) => (
+      {new Array(30).fill(0).map((v, k) => (
         <Text key={k}>{v}</Text>
       ))}
     </FocusRender>
   ) : (
     <>
       {!!count && <Text>Count is {count}</Text>}
-      {new Array(5000).fill(0).map((v, k) => (
+      {new Array(30).fill(0).map((v, k) => (
         <Text key={k}>{v}</Text>
       ))}
     </>

@@ -5,7 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from 'screens/HomeScreen';
 import {Provider} from 'react-redux';
 import _store from 'common/store';
-import TabNavigator from 'navigators/TabNavigator';
+import Screen2 from "screens/Screen2";
+
 const store = _store();
 enableScreens();
 const Stack = createNativeStackNavigator();
@@ -14,9 +15,9 @@ const AppNavigator = function () {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Tabs" component={TabNavigator} />
+          <Stack.Screen name="Screen2" component={Screen2} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

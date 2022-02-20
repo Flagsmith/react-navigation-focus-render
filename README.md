@@ -60,7 +60,7 @@ This repository includes an [example project](/example) that demonstrates this w
 - Contains an expensive component that renders 5000 text elements and is connected to redux state "count"
 - You can toggle between rendering the component via FocusRender or just by itself
 
-[TabScreen](./example/app/components/screens/Tab1Screen.tsx):
+[Screen2](./example/app/components/screens/Screen2.tsx):
 
 - Contains a screen with a button that updates state "count"
 
@@ -73,4 +73,4 @@ Given this simple example, the difference in performance when updating state can
 Of course, this is quite an extreme example but given an active stack of many tabs / screens this could easily add up if you have complex components.
 
 
-
+Read more about this [here](https://dev.to/kylessg/improving-your-react-native-application-performance-with-react-navigation-focus-render-2hih)
