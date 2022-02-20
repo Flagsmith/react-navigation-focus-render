@@ -25,7 +25,7 @@ const ExpensiveComponent = () => {
    
    return (
      <FocusRender>
-       ... Components
+       ... Components that will only re-render when the screen is focused
      </FocusRender>
    ) 
 }
@@ -49,7 +49,7 @@ const ExpensiveComponent = () => {
    
    return (
      <FocusRender Wrapper={Wrapper}>
-       ... Components
+       ... Components that will only re-render when the screen is focused
      </FocusRender>
    ) 
 }
